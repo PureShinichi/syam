@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Our Menu</title>
+	<link href="https://fonts.googleapis.com/css2?family=Aguafina+Script&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Aguafina+Script&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Tilt+Warp&display=swap" rel="stylesheet">
+</head>
+
+<style>
+body {
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: url('img/menu.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    z-index: -1;
+    animation: fadeinbackground 1s ease-in;
+}
+
+body {
+	padding: 0;
+	margin: 0;
+	overflow-x: hidden;
+}
+
+h1 {
+	color: white;
+	text-align: center;
+	margin-top: 5%;
+	font-size: 60px;
+	letter-spacing: 10px;
+	font-family: 'Aguafina Script';
+	transition: 0.5s;
+}
+
+h1:hover {
+	color: goldenrod;
+	transform: scale(1.1);
+	cursor: default;
+	text-decoration: underline;
+	text-underline-position: under;
+	letter-spacing: 15px;
+	transition: 0.3s;
+}
+
+
+h2 {
+	color: white;
+	text-align: center;
+	margin-bottom: 2%;
+	font-size: 60px;
+	letter-spacing: 0.2px;
+	font-family: 'Montserrat';
+}
+
+p {
+	color: white;
+	font-size: 20px;
+	letter-spacing: 2px;
+	font-family: 'Montserrat';
+}
+
+button {
+	font-size: 11px;
+	width: 120px;
+	height: 50px;
+	text-align: center;
+	margin: 5px;
+	align-items: center;
+	position: absolute;
+	margin-left: 46%;
+	top: 65%;
+	font-family: 'Tilt Warp';
+	border: solid white 2px;
+	background-color: transparent;
+	color: whitesmoke;
+	transition: 0.3s;
+	letter-spacing: 2px;
+}
+
+button:hover {
+	background-color: #CD7F32;
+	transform: scale(1.1);
+	border: none;
+	letter-spacing: 	1.3px;
+}
+
+ul ,li ,a {
+	display: flex;
+	font-family: 'montserrat';
+	list-style: none;
+	text-decoration: none;
+	justify-content: center;
+	padding: 12px;
+	margin: 	2px;
+	text-align: center	;
+	color: 	white;
+	transition: 0.3s;
+	font-weight: 	normal	;
+	letter-spacing: 1.2px;
+	font-size: 14px;
+}
+
+ul ,li ,a:hover{
+	font-weight: 	bold	;
+	color: 	goldenrod	;
+	transform: scale(1.1);
+	letter-spacing: 2.2px;
+}
+
+.main {
+    font-family: 'Montserrat';
+    background-color: #CD7F32;
+    position: absolute;
+    text-align: center;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+    transform: translateY(200px);
+    font-size: 25px;
+    color: white;
+}
+body {
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+.carousel-container {
+    position: absolute;
+    top: 150vh;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 600px;
+    height: 400px;
+    text-align: center;
+    z-index: 1;
+}
+
+.carousel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.carousel img {
+    width: 250px;
+    transition: transform 0.5s, filter 0.5s;
+    filter: grayscale(100%);
+    opacity: 0.6;
+    position: absolute;
+    transition: 0.5s;
+}
+.carousel img.active {
+    transform: scale(1.3);
+    filter: grayscale(0%);
+    opacity: 1;
+    z-index: 2;
+}
+
+.carousel img.left {
+    transform: scale(0.9) translateX(-200px);
+    transition: 0.5s;
+}
+
+.carousel img.right {
+    transform: scale(0.9) translateX(200px);
+    transition: 0.5s;
+    }
+
+.lb, .rb {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 15px;
+    cursor: pointer;
+    background-color: white;
+    padding: 10px;
+    border-radius: 2%;
+    user-select: none;
+    font-weight: bold;
+    z-index: 100;
+    width: 30px;
+    height: 20px;
+    }
+
+.lb:hover {
+   	background-color: #1f242d;
+    transition: 0.5s;
+   	color: white;
+}
+
+.rb:hover {
+    background-color: #1f242d;
+   	transition: 0.5s;
+   	color: white;
+}
+
+.lb {
+    left: -60px;
+}
+
+.rb {
+    right: -60px;
+}
+
+footer {
+    background-color: #1f242d;
+   	height: 20%;
+   	margin-bottom: 0;
+   	transform: translateY(900px);
+   	top: 200vh;
+   	width: 100%;
+   	font-size: 20px;
+   	text-align: center;
+   	color: white;
+   	font-family: 'Montserrat';
+}
+</style>
+<body>
+
+
+<button onclick="location.href='#menuSection'">CHECK DISHES</button>
+
+<header>	
+		<ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="aboutus.html">About</a></li>
+			<li><a href="menu.html">Menu</a></li>
+			<li><a href="facilities.html">Facilities</a></li>
+			<li><a href="contact_us.html">Contact us</a></li>
+		</ul>
+</header>
+
+	<h1>
+		AliBaba
+	</h1>
+	<h2>DISHES SERVED RIGHT <br>
+		<p>Varieties of Dishes served at out cafe. Check it out !</p>
+	</h2>
+<p></p>
+
+<div id='menuSection' class="main">
+	<h3>The Menu's</h3>
+</div>
+
+<div class="carousel-container">
+    <div class="carousel">
+        <img id="leftImg" src="img/m8.jpg" class="left">
+        <img id="centerImg" src="img/m9.jpg" class="active">
+        <img id="rightImg" src="img/m10.jpg" class="right">
+    </div>
+
+    <span class="lb" onclick="prevImage()">❮</span>
+    <span class="rb" onclick="nextImage()">❯</span>
+</div>
+
+<footer>
+</footer>
+<script>
+    let images = [
+        "img/m1.jpg", "img/m2.jpg", "img/m3.jpg", "img/m4.jpg", "img/m5.jpg",
+        "img/m6.jpg ", "img/m7.jpg", "img/m8.jpg", "img/m9.jpg", "img/m10.jpg",
+        "img/m11.jpg", "img/m12.jpg", "img/m13.jpg", "img/m14.jpg", "img/m15.jpg",
+        "img/m16.jpg", "img/m17.jpg", "img/m18.jpg"
+    ];
+
+    let currentIndex = 8;
+
+    function updateImages() {
+        let leftIndex = (currentIndex - 1 + images.length) % images.length;
+        let rightIndex = (currentIndex + 1) % images.length;
+
+        document.getElementById("leftImg").src = images[leftIndex];
+        document.getElementById("centerImg").src = images[currentIndex];
+        document.getElementById("rightImg").src = images[rightIndex];
+    }
+
+    function prevImage() {
+        currentIndex = (currentIndex - 1 + images.length) % images.length;
+        updateImages();
+    }
+
+    function nextImage() {
+        currentIndex = (currentIndex + 1) % images.length;
+        updateImages();
+    }
+</script>
+
+</body>
+</html>

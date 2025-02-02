@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Homepage</title>
+	<link rel="stylesheet" href="style.css">
+	<link href="https://fonts.googleapis.com/css2?family=Forum&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Aguafina+Script&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<style>
+	body {
+		font-family: 'Montserrat';
+	}
+</style>
+<body>
+
+<div class="kopi">
+	<img src="img/kopi.png">
+</div>
+
+	<aside class="tepi">
+		<div class="logo">
+			<img src="img/alibaba1.png" alt="AlibabaCafe">
+		</div>
+		<nav>
+			<ul>
+				<li><a href="index.html">HOME</a></li>
+				<li><a href="aboutus.html">ABOUT</a></li>
+				<li><a href="menu.html">MENU</a></li>
+				<li><a href="facilities.html">FACILITIES</a></li>
+				<li><a href="contact_us.html">CONTACT US</a></li>
+			</ul>
+		</nav>
+		<button onclick="window.location.href='https://wa.link/7tfro5';"> BOOK NOW!</a></button>
+	</aside>
+	<div class="main">
+		<h1>Alibaba Station</h1>
+		<p></p>
+		<p>Welcome to Alibaba Station</p>
+		<p>Food for the soul, flavour for the senses.</p>
+	</div>
+
+<div id="sidePanel">
+    <button id="togglePanel">&lt;</button>
+    <div class="panel-content">
+    	<h2 style="transform: translate(0px, 50px); ">Check out <br>Our Cafe!</h2>
+    	<h4 style="font-family: 'Aguafina Script';">AliBaba</h4>
+    		<iframe 
+            	src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15876.75044871734!2d102.3848275871582!3d5.8291530000000025!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31b69315b9b32f35%3A0xbaff73302d0a73d9!2sAlibaba%20Cafe!5e0!3m2!1sen!2smy!4v1738348395596!5m2!1sen!2smy" 
+            	width="300px" 
+           		height="300px" 
+         		style="border:0; border-radius:20px;transform: translateY(50px); " allowfullscreen="" loading="lazy">
+        </iframe>
+    </div>
+</div>
+
+<script>
+    let sidePanel = document.getElementById("sidePanel");
+    let togglePanel = document.getElementById("togglePanel");
+
+    togglePanel.onclick = function () {
+        let isOpen = sidePanel.style.right === "0px";
+        sidePanel.style.right = isOpen ? "-400px" : "0px"; //
+        togglePanel.innerHTML = isOpen ? "&lt;" : "&gt;";
+    };
+</script>
+
+</body>
+</html>

@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Facilities</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Aguafina+Script&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Tilt+Warp&display=swap" rel="stylesheet">
+  <style>
+body{
+  background-color: #1f242d;
+  font-family: 'Montserrat';
+  border-radius: 0%;
+}
+.header {
+  padding: 140px;
+  text-align: center;
+  background: beige;
+  color:white;
+  font-size: 50px;
+  background-image:url(images/tanggo.png);
+  background-size: 100%;
+  font-family: 'Montserrat';
+border-radius: 2%;
+}
+.box {
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease-in-out;
+  width: 70%;
+  margin: 20px auto;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  background-color: #CD7F32;
+  color: white;
+
+}
+.box img {
+  width: 20%;
+  display: block;
+  transition: tranform 0.3 ease-in-out;
+  border-radius: 10%;
+  border: solid transparent 2px;
+}
+.box:hover img{
+  transition: 0.7s;
+  transform: scale(1.1);
+}
+.box:nth-child(odd) {
+  flex-direction: row;
+  text-align: left;
+}
+.box:nth-child(even) {
+  flex-direction: row-reverse;
+  text-align: right;
+}
+h2 {
+  text-align: center;
+  width: 100%;
+  transition: 0.3s;
+  font-family: 'montserrat';
+  color: ;
+}
+p {
+  text-align: justify;
+  font-size: 20px;
+  flex: 1;
+  margin: 0 20px;
+}
+.overlay p{
+  width: 90%;
+  font-size: 14px;
+  line-height: 1.4;
+  text-align: justify;
+  margin-bottom: 20px;
+}
+h1{
+  font-size: 50px;
+}
+.luarbox{
+  display: grid;
+  grid-template-columns:repeat(auto-fit, minmax(300px, 1fr)) ;
+  gap: 40px;
+  width: 100%;
+}
+ .box:hover .overlay{
+  height: 100%;
+}
+.overlay h2{
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+
+}
+
+header {
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  text-align: center;
+}
+
+ul {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  background: none;
+}
+
+ul li a {
+  color: white;
+  font-size: 18px;
+  padding: 8px 12px;
+  text-decoration: none;
+  transition: 0.3s;
+  letter-spacing: 1.2px;
+}
+
+ul li a:hover {
+  color: goldenrod;
+  font-weight:  bold  ;
+  transform: scale(1.1);
+  letter-spacing: 2.2px;
+}
+
+h2{
+  color: white;
+}
+
+
+  </style>
+</head>
+<body>
+
+<header>  
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="aboutus.html">About</a></li>
+      <li><a href="menu.html">Menu</a></li>
+      <li><a href="facilities.html">Facilities</a></li>
+      <li><a href="contact_us.html">Contact us</a></li>
+    </ul>
+</header>
+
+  <div class="header">
+    <h1>OUR FACILITIES</h1>
+    <p style="text-align: center;">"Our facilities are clean, well-equipped, and designed for your comfort and convenience."</p>
+  </div>
+<div class="8">
+<h2>THE FACILITIES</h2>
+</div>
+<div class="luarbox"></div>
+  <div class="box">
+    <img src="images/toilet.jpg">
+    <div>
+      <div class="overlay">
+      <h2>Toilet</h2>
+      <p>We provide clean, spacious, and well-maintained toilets to ensure maximum comfort and hygiene for all our visitors. Your convenience is our priority.</p>
+    </div>
+  </div>
+</div>
+
+  <div class="box">
+    <img src="images/surau.jpg">
+    <div>
+      <div class="overlay">
+      <h2>Musolla</h2>
+      <p style="text-align: right;">Our dedicated musolla offers a peaceful and well-equipped space for prayers, complete with prayer mats and proper facilities to accommodate your worship needs.</p>
+    </div>
+  </div>
+</div>
+
+  <div class="box">
+    <img src="images/mic.jpg">
+    <div>
+      <div class="overlay">
+      <h2>Speaker box</h2>
+      <p>Experience the joy of singing with our high-quality karaoke system, featuring clear sound, an extensive song selection, and a comfortable setup for you to enjoy with family and friends.</p>
+    </div>
+  </div>
+</div>
+
+
+  <div class="box">
+    <img src="images/ac.jpg">
+    <div>
+      <div class="overlay">
+      <h2 style="text-align: center;">Air-cond</h2>
+      <p >Our facility is fully equipped with air-conditioning to provide a cool, fresh, and comfortable environment, ensuring you can relax and enjoy your time with ease.</p>
+    </div>
+    
+  </div>
+</div>
+
+</div>
+</body>
+</html>
